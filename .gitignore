@@ -3,3 +3,5 @@
 venv/*
 
 *.np
+
+__pycache__/
