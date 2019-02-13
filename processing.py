@@ -10,13 +10,13 @@ DATA_DIR = 'C:\RISKO\SKOLA\Dimplomka\Challanges\CHAOS\Data\CT_data_batch - COMBI
 ROWS = 512
 COLUMS = 512
 
-series = len(os.listdir(DATA_DIR))
-dcm_data = []
-mask_data = []
-
 
 def process_data():
     print('Processing data .....')
+    # series = len(os.listdir(DATA_DIR))
+    dcm_data = []
+    mask_data = []
+
     for directory in os.listdir(DATA_DIR)[:5]:
         if os.path.isdir(os.path.join(DATA_DIR, directory)):
             path_dcm = os.path.join(DATA_DIR, directory, 'DICOM_anon')
